@@ -13,10 +13,17 @@ CREATE TABLE usuario
 );
 
 -- INSERIR DADOS
-
 /* use projeto1;
     INSERIR DADOS
 INSERT INTO usuario
 (nome_usuario, fone_usuario, email_usuario, senha) VALUES ('Cássio', '(18) 3622-9046', 'cassio@mail.com', '1234');
+
+-- LISTAR DADOS 
 SELECT * FROM usuario;
+
+-- ALTERAR DADOS
+UPDATE usuario SET nome_usuario = "Zezinho",
+		email_usuario = "ze@mail.com"
+WHERE id_usuario = 1
+
 */

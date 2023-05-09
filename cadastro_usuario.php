@@ -1,5 +1,5 @@
 <?php
-    include("conexão.php");
+    include("conexao.php");
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $fone = $_POST['fone'];
@@ -13,7 +13,7 @@
 
     $sql = "INSERT INTO usuario (nome_usuario, email_usuario, fone_usuario, senha)";
 
-    $sql = " VALUES ('".$nome."','".$email."','".$fone."','".$senha."')";
+    $sql .= " VALUES ('".$nome."','".$email."','".$fone."','".$senha."')";
 
     echo $sql."<br>";
     $result = mysqli_query($con, $sql);
