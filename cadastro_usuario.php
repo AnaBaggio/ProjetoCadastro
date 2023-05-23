@@ -22,6 +22,5 @@
         echo "Dados cadastrados com sucesso!";
     else
         echo "Erro ao tentar cadastrar!";
-
         
 ?>
