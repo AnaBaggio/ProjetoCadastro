@@ -8,7 +8,7 @@
 </head>
 <body>
         <h1>Cadastro de Usuários - IFSP</h1>
-        <form action="cadastro_usuario.php" method="POST">
+        <form action="cadastro_usuario.php" method="POST" enctype="multipart/form-data">
             <div>
                 <label for= "nome">Nome</label>
                 <input type="text" name="nome" id="nome">
@@ -28,9 +28,12 @@
                 <input type="password" name="senha" id="senha">
             </div>
             <div>
+                <input type="file" name="foto" id="foto" accept="image/*">
+            </div>
+            <div>
                 <button type="submit">Salvar</button>
             </div>
-
+    
     </form>
 
 </body>
